@@ -9,9 +9,10 @@ export interface FingerHole {
   y: number
   radius: number
   rotation?: number
-  shape?: 'circle' | 'square' | 'rectangle'
+  shape?: 'circle' | 'cylinder' | 'square' | 'rectangle'
   width?: number
   height?: number
+  depth_override?: number | null
 }
 
 export interface Polygon {
@@ -163,6 +164,7 @@ export interface PlacedTool {
   finger_holes: FingerHole[]
   interior_rings: Point[][]
   rotation: number
+  depth_override?: number | null
 }
 
 export interface BinData {

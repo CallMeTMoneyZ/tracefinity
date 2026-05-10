@@ -17,7 +17,8 @@ class FingerHole(BaseModel):
     width: float | None = None  # for rectangles
     height: float | None = None  # for rectangles
     rotation: float = 0.0  # degrees
-    shape: Literal["circle", "square", "rectangle"] = "circle"
+    shape: Literal["circle", "cylinder", "square", "rectangle"] = "circle"
+    depth_override: float | None = None  # mm; None = use bin_config.cutout_depth
 
 
 class TextLabel(BaseModel):
@@ -271,6 +272,7 @@ class PlacedTool(BaseModel):
     finger_holes: list[FingerHole] = []  # mm, bin-space
     interior_rings: list[list[Point]] = []  # mm, bin-space
     rotation: float = 0.0  # degrees, applied on top of library points
+    depth_override: float | None = None  # mm; None = use bin_config.cutout_depth
 
 
 class BinConfig(BinParams):
