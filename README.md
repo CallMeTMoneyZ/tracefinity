@@ -149,6 +149,21 @@ No API key and prefer not to use the local model? Upload a mask manually:
 - **Landscape and portrait** -- Paper orientation auto-detected from corner positions
 - **Single-container Docker** -- Frontend and backend in one image, data in a single volume
 
+## Guides
+
+Step-by-step usage guides covering each part of the workflow:
+
+- [Getting started](docs/usage/getting-started.md)
+- [Uploading photos](docs/usage/uploading-photos.md)
+- [Tracing](docs/usage/tracing.md)
+- [Tool editor](docs/usage/tool-editor.md)
+- [Tool library](docs/usage/tool-library.md)
+- [Bin configuration](docs/usage/bin-configuration.md)
+- [Bin layout](docs/usage/bin-layout.md)
+- [Projects](docs/usage/projects.md)
+- [Exporting](docs/usage/exporting.md)
+- [Keyboard shortcuts](docs/usage/keyboard-shortcuts.md)
+
 ## What is Gridfinity?
 
 [Gridfinity](https://gridfinity.xyz/) is a modular storage system designed by [Zack Freedman](https://www.youtube.com/watch?v=ra_9zU-mnl8). Bins snap into baseplates on a 42mm grid, making it easy to organise tools, components, and supplies. The system is open source and hugely popular in the 3D printing community.
