@@ -89,7 +89,7 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/sonashow:${{ needs.bump-version-and-create-release-tag.outputs.new_version }}
-            ${{ secrets.DOCKERHUB_USERNAME }}/sonashow:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/tracefinity:${{ needs.bump-version-and-create-release-tag.outputs.new_version }}
+            ${{ secrets.DOCKERHUB_USERNAME }}/tracefinity:latest
           build-args: |
             RELEASE_VERSION=${{ needs.bump-version-and-create-release-tag.outputs.new_version }}
